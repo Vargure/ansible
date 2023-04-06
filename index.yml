@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: copy over index
+    ansible.builtin.copy:
+      src: index7.html
+      dest: /var/www/html

@@ -2,7 +2,7 @@
 - hosts: all
   become: true
   tasks:
-  - name: Install apache
+  - name: Install apache2
     apt:
       name: apache2
   - name: start apache on boot
